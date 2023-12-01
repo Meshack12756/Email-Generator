@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JKUAT Email Generator</title>
+  <link rel="stylesheet" href="genEmail.css">
+  <script src="genEmail.js"></script>
+</head>
+<body>
+
+  <form id="emailForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName"><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName"><br>
+
+    <label for="regNumber">Registration Number:</label>
+    <input type="text" id="regNumber" pattern="[A-Za-z]{3}\d{3}" placeholder="Format: Three letters followed by three digits">
+    <small>NOTE: Ensure you follow the format above</small><br>
+
+    <button type="button" onclick="generateEmail()">Generate Email</button>
+    <p id="DisplayEmail"></p>
+  </form>
+
+</body>
+</html>
